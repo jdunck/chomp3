@@ -1,0 +1,15 @@
+fab for deploy, chef for server config
+
+Uploader in Django
+  assigns ID (hash?)
+  streams data to S3
+  max length?
+EBS for (small) persistent store
+ID service -   uniqueness is important, not difficulty of guessing.
+  http://www.random.org/clients/http/ ?
+  Redis incr?
+  uuidd.py ?
+    http://gist.github.com/117836
+
+Nginx to server wrapper around data: uri
+Varnish to pull from S3 into HTML wrapper using ESI.
